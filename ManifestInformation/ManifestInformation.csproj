@@ -15,6 +15,7 @@
     <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="MySqlConnector" Version="2.1.13" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
     <PackageReference Include="System.Net.Http.Formatting.Extension" Version="5.2.3" />

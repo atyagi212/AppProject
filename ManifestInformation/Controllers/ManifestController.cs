@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 using AutoMapper;
 using ManifestInformation.Entities.Input;
 using ManifestInformation.Entities.Output;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace ManifestInformation.Controllers
 {
@@ -31,7 +31,7 @@ namespace ManifestInformation.Controllers
         /// <param name="model"></param>
         /// <returns></returns>
         [HttpGet]
-        public string GetManifest()
+        public ActionResult GetManifest()
         {
             string uri = _config.GetValue<string>("InternalAPI:URI");
             string apiKey = _config.GetValue<string>("InternalAPI:YOUR_ACCESS_KEY");
@@ -41,14 +41,14 @@ namespace ManifestInformation.Controllers
             ManifestResponseEntity responseEntity = new ManifestResponseEntity();
             try
             {
-                 //   return BadRequest("Invalid Input fields");
+                //   return BadRequest("Invalid Input fields");
 
                 using (HttpClient client = new HttpClient())
                 {
                     // Add an header for JSON format.
-                   // client.DefaultRequestHeaders.Add(headerKey, headerValue);
+                    // client.DefaultRequestHeaders.Add(headerKey, headerValue);
 
-                    HttpResponseMessage response = client.GetAsync(uri).Result;  
+                    HttpResponseMessage response = client.GetAsync(uri).Result;
                     if (response.IsSuccessStatusCode)
                     {
                         // Parse the response body.
@@ -58,8 +58,8 @@ namespace ManifestInformation.Controllers
                             IgnoreReadOnlyProperties = true,
                             WriteIndented = true
                         };
-                          string json= JsonConvert.SerializeObject(responseEntity);
-                        return json;
+                        string json = JsonConvert.SerializeObject(responseEntity);
+                        return Content(JObject.Parse(json).ToString(), "application/json");
 
                     }
                     else
@@ -71,7 +71,7 @@ namespace ManifestInformation.Controllers
 
             catch (Exception)
             {
-                return "";// StatusCode(500, new JsonResult("Service is Unavilable, please try again later."));
+                return StatusCode(500, new JsonResult("Service is Unavilable, please try again later."));
             }
 
             var options = new JsonSerializerOptions
@@ -79,7 +79,7 @@ namespace ManifestInformation.Controllers
                 IgnoreReadOnlyProperties = true,
                 WriteIndented = true
             };
-            return "";// Ok(new JsonResult(new ManifestResponseEntity(), options));
+            return Ok(new JsonResult(new ManifestResponseEntity(), options));
         }
 
     }
