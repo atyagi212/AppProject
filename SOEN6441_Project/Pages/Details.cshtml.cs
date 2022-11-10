@@ -1,5 +1,9 @@
+﻿using System.Data;
+using System.Net;
+using System.Reflection;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using MySqlConnector;
 using SOEN6441_Project.Entities.Output;
 
 namespace SOEN6441_Project.Pages
@@ -43,6 +47,5 @@ namespace SOEN6441_Project.Pages
         {
             return Page();
         }
-
     }
 }

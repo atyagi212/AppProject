@@ -1,4 +1,5 @@
-﻿namespace SOEN6441_Project
+﻿using System;
+namespace SOEN6441_Project
 {
     public class Constants
     {
@@ -24,3 +25,4 @@
         }
     }
 }
+

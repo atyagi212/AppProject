@@ -1,4 +1,5 @@
-﻿using SOEN6441_Project.Entities.Output;
+﻿using System;
+using SOEN6441_Project.Entities.Output;
 
 namespace SOEN6441_Project.Interfaces
 {
@@ -17,3 +18,4 @@ namespace SOEN6441_Project.Interfaces
         FlightRecords ParseFlightData(FlightRecords flightRecord);
     }
 }
+

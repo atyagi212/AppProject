@@ -139,8 +139,22 @@
                         <td>@record.terminal</td>
                         <td>@record.gate</td>
                         <td> @record.delay </td>
-                        <td>@record.scheduled</td>
-                        <td>@record.estimated</td>
+                        @if (record.scheduled != null)
+                        {
+                            <td>@record.scheduled.ToString("MM-dd-yyyy hh:mm tt")</td>
+                        }
+                        else
+                        {
+                            <td></td>
+                        }
+                        @if (record.estimated != null)
+                        {
+                            <td>@record.estimated.ToString("MM-dd-yyyy hh:mm tt")</td>
+                        }
+                        else
+                        {
+                            <td></td>
+                        }
                     </tr>
                 }
             }
@@ -178,8 +192,22 @@
                         <td>@record.terminal</td>
                         <td>@record.gate</td>
                         <td> @record.baggage </td>
-                        <td>@record.scheduled</td>
-                        <td>@record.estimated</td>
+                        @if (record.scheduled != null)
+                        {
+                            <td>@record.scheduled.ToString("MM-dd-yyyy hh:mm tt")</td>
+                        }
+                        else
+                        {
+                            <td></td>
+                        }
+                        @if (record.estimated != null)
+                        {
+                            <td>@record.estimated.ToString("MM-dd-yyyy hh:mm tt")</td>
+                        }
+                        else
+                        {
+                            <td></td>
+                        }
                     </tr>
                 }
             }

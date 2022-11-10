@@ -1,11 +1,11 @@
-﻿using Microsoft.VisualBasic;
+﻿using System;
+using System.Data;
 using SOEN6441_Project.Entities.Output;
 using SOEN6441_Project.Interfaces;
-using System.Data;
 
 namespace SOEN6441_Project
 {
-    public class PublishFlights:IDatabaseSubscriber
+    public class PublishFlights : IDatabaseSubscriber
     {
         public NewFlightsManifest _newFlightsManifest;
         private ManifestResponseEntity _manifestResponseEntity;
@@ -21,7 +21,7 @@ namespace SOEN6441_Project
         public void update()
         {
             this._manifestResponseEntity = _newFlightsManifest.GetManifestResponse();
-            //CreateNewFlightData(this._manifestResponseEntity);
+            CreateNewFlightData(this._manifestResponseEntity);
         }
 
         public void CreateNewFlightData(ManifestResponseEntity response)
@@ -110,6 +110,6 @@ namespace SOEN6441_Project
             }
             return flightRecord;
         }
-
     }
 }
+

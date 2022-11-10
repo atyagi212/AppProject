@@ -3,10 +3,11 @@ using MySqlConnector;
 using System.Data;
 using System.Reflection;
 using System.Net.NetworkInformation;
+using SOEN6441_Project.Interfaces;
 
 namespace SOEN6441_Project
 {
-    public class DBContext
+    public class DBContext: IDBContext
     {
         private static DBContext instance = null;
         public static string connectionString = string.Empty;
@@ -155,7 +156,7 @@ namespace SOEN6441_Project
                 return null;
         }
 
-        private bool ExecuteNonQuery(MySqlConnection conn, string sql)
+        public bool ExecuteNonQuery(MySqlConnection conn, string sql)
         {
             try
             {
@@ -175,7 +176,7 @@ namespace SOEN6441_Project
             }
         }
 
-        private DataTable ExecuteReader(MySqlConnection conn, string sql)
+        public DataTable ExecuteReader(MySqlConnection conn, string sql)
         {
             try
             {
@@ -198,7 +199,7 @@ namespace SOEN6441_Project
             }
         }
 
-        private string ExecuteScalar(MySqlConnection conn, string sql)
+        public string ExecuteScalar(MySqlConnection conn, string sql)
         {
             try
             {
@@ -223,7 +224,7 @@ namespace SOEN6441_Project
             }
         }
 
-        private string GenerateInsertQuery<T>(T type)
+        public string GenerateInsertQuery<T>(T type)
         {
             Type t = type.GetType();
             string tableName = t.Name;
@@ -253,7 +254,7 @@ namespace SOEN6441_Project
             return sql;
         }
 
-        private string GenerateUpdateQuery<T>(T type)
+        public string GenerateUpdateQuery<T>(T type)
         {
             Type t = type.GetType();
             string tableName = t.Name;
@@ -265,7 +266,7 @@ namespace SOEN6441_Project
             {
                 if (property.GetValue(type) != null)
                 {
-                    if (!Enum.IsDefined(typeof(Constants.SubTables), property.Name.ToUpper()))
+                    if (!Enum.IsDefined(typeof(Constants.SubTables), property.Name.ToUpper()) && property.Name!="Id")
                     {
                         if (property.PropertyType == typeof(String))
                             updateParams = updateParams + property.Name + " = '" + property.GetValue(type) + "', ";
@@ -277,11 +278,11 @@ namespace SOEN6441_Project
                 }
             }
 
-            string sql = "UPDATE " + tableName + "SET " + updateParams.Trim().TrimEnd(',') + " WHERE " + propertyInfos[0].Name + " = " + propertyInfos[0].GetValue(type) + ";";
+            string sql = "UPDATE " + tableName + " SET " + updateParams.Trim().TrimEnd(',') + " WHERE " + propertyInfos[0].Name + " = " + propertyInfos[0].GetValue(type) + ";";
             return sql;
         }
 
-        private string GenerateDeleteQuery<T>(T type)
+        public string GenerateDeleteQuery<T>(T type)
         {
             Type t = type.GetType();
             string tableName = t.Name;
@@ -292,7 +293,7 @@ namespace SOEN6441_Project
             return sql;
         }
 
-        private string GenerateSelectQuery<T>(T type, List<string> parameters)
+        public string GenerateSelectQuery<T>(T type, List<string> parameters)
         {
             Type t = type.GetType();
             string tableName = t.Name;
@@ -317,7 +318,7 @@ namespace SOEN6441_Project
             return sql;
         }
 
-        private string GenerateSelectAllQuery<T>(T type)
+        public string GenerateSelectAllQuery<T>(T type)
         {
             Type t = type.GetType();
             string tableName = t.Name;
@@ -326,7 +327,7 @@ namespace SOEN6441_Project
             return sql;
         }
 
-        private string GenerateDeleteAllQuery<T>(T type)
+        public string GenerateDeleteAllQuery<T>(T type)
         {
             Type t = type.GetType();
             string tableName = t.Name;

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/akshattyagi/Documents/GitHub/AppProject/UnitTests/UnitTests.csproj": {}
+    "/Users/akshattyagi/Documents/GitHub/SOEN6441_Project/UnitTests/UnitTests.csproj": {}
   },
   "projects": {
-    "/Users/akshattyagi/Documents/GitHub/AppProject/UnitTests/UnitTests.csproj": {
+    "/Users/akshattyagi/Documents/GitHub/SOEN6441_Project/UnitTests/UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/akshattyagi/Documents/GitHub/AppProject/UnitTests/UnitTests.csproj",
+        "projectUniqueName": "/Users/akshattyagi/Documents/GitHub/SOEN6441_Project/UnitTests/UnitTests.csproj",
         "projectName": "UnitTests",
-        "projectPath": "/Users/akshattyagi/Documents/GitHub/AppProject/UnitTests/UnitTests.csproj",
+        "projectPath": "/Users/akshattyagi/Documents/GitHub/SOEN6441_Project/UnitTests/UnitTests.csproj",
         "packagesPath": "/Users/akshattyagi/.nuget/packages/",
-        "outputPath": "/Users/akshattyagi/Documents/GitHub/AppProject/UnitTests/obj/",
+        "outputPath": "/Users/akshattyagi/Documents/GitHub/SOEN6441_Project/UnitTests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/akshattyagi/.nuget/NuGet/NuGet.Config"
