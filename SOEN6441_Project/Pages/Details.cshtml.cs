@@ -27,7 +27,7 @@ namespace SOEN6441_Project.Pages
 
         public void OnGet()
         {
-            DBContext dBContext = DBContext.getInstance(_config);
+            DataMapper dBContext = DataMapper.getInstance(_config);
             int flightRecordId = Convert.ToInt32(Request.Query["Id"].ToString());
             departures = new List<Departure>();
             arrivals = new List<Arrival>();

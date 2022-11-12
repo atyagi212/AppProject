@@ -7,21 +7,21 @@ using SOEN6441_Project.Interfaces;
 
 namespace SOEN6441_Project
 {
-    public class DBContext: IDBContext
+    public class DataMapper : IDataMapper
     {
-        private static DBContext instance = null;
+        private static DataMapper instance = null;
         public static string connectionString = string.Empty;
 
-        private DBContext(IConfiguration config)
+        private DataMapper(IConfiguration config)
         {
             connectionString = config.GetValue<string>("ConnectionStrings:myconn");
         }
 
-        public static DBContext getInstance(IConfiguration config)
+        public static DataMapper getInstance(IConfiguration config)
         {
             if (instance == null)
             {
-                instance = new DBContext(config);
+                instance = new DataMapper(config);
             }
             return instance;
         }

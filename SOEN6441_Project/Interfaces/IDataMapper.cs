@@ -5,7 +5,7 @@ using MySqlConnector;
 
 namespace SOEN6441_Project.Interfaces
 {
-    public interface IDBContext
+    public interface IDataMapper
     {
         bool DeleteCollection<T>(T type);
 

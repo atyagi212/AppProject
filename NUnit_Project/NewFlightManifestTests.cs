@@ -47,7 +47,7 @@ public class NewFlightManifestTests
     public void Test_AddObserver_Result_Fail()
     {
         //Arrange
-
+        
         dynamic param = new ExpandoObject();
 
         //Act
@@ -62,7 +62,7 @@ public class NewFlightManifestTests
     public void Test_RemoveObserver_Result_OK()
     {
         //Arrange
-
+        
 
         //Act
         newFlightsManifest.removeObserver(mockObserver.Object);
@@ -76,7 +76,7 @@ public class NewFlightManifestTests
     public void Test_RemoveObserver_Result_Fail()
     {
         //Arrange
-
+        
         dynamic param = new ExpandoObject();
 
         //Act
@@ -91,7 +91,7 @@ public class NewFlightManifestTests
     public void Test_NotifyObservers_Result_OK()
     {
         //Arrange
-
+        
 
         //Act
         newFlightsManifest.notifyObservers();
@@ -105,7 +105,7 @@ public class NewFlightManifestTests
     public void Test_GetNewFlightsManifest_Result_OK()
     {
         //Arrange
-
+        
 
         //Act
         newFlightsManifest.GetNewFlightsManifest();

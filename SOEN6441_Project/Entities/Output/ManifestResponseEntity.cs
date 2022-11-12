@@ -27,12 +27,8 @@
         public string terminal { get; set; }
         public string gate { get; set; }
         public string baggage { get; set; }
-        //public object delay { get; set; }
         public DateTime scheduled { get; set; }
         public DateTime estimated { get; set; }
-        //public object actual { get; set; }
-        //public object estimated_runway { get; set; }
-        //public object actual_runway { get; set; }
     }
 
     public class Codeshared
@@ -56,8 +52,6 @@
         public Arrival arrival { get; set; }
         public Airline airline { get; set; }
         public Flight flight { get; set; }
-        //public object aircraft { get; set; }
-        //public object live { get; set; }
     }
 
     public class Departure
@@ -73,9 +67,6 @@
         public int? delay { get; set; }
         public DateTime scheduled { get; set; }
         public DateTime estimated { get; set; }
-        //public object actual { get; set; }
-        //public object estimated_runway { get; set; }
-        //public object actual_runway { get; set; }
     }
 
     public class Flight

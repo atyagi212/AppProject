@@ -22,7 +22,7 @@ namespace SOEN6441_Project.Pages
 
         public void OnGet()
         {
-            DBContext dBContext = DBContext.getInstance(_config);
+            DataMapper dBContext = DataMapper.getInstance(_config);
             flightRecords = new List<FlightRecords>();
             var records = dBContext.SelectAllCollection(new FlightRecords());
             if(records.Count()>0)

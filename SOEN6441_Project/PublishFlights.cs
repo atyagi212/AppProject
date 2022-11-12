@@ -35,7 +35,7 @@ namespace SOEN6441_Project
                 foreach (var record in response.data)
                 {
                     record.Id = constants.getCurrentFlightId();
-                    DBContext dbContext = DBContext.getInstance(_config);
+                    DataMapper dbContext = DataMapper.getInstance(_config);
                     dbContext.InsertCollection(record);
                     FlightRecords tempRecord = ParseFlightData(record);
                     InsertComplexTables(tempRecord, dbContext);
@@ -46,7 +46,7 @@ namespace SOEN6441_Project
 
         public void ResetFlightsData()
         {
-            DBContext dBContext = DBContext.getInstance(_config);
+            DataMapper dBContext = DataMapper.getInstance(_config);
             dBContext.DeleteAllCollection(new Codeshared());
             dBContext.DeleteAllCollection(new Flight());
             dBContext.DeleteAllCollection(new Airline());
@@ -57,7 +57,7 @@ namespace SOEN6441_Project
 
         public int GetLatestFlightId()
         {
-            DBContext context = DBContext.getInstance(_config);
+            DataMapper context = DataMapper.getInstance(_config);
             IEnumerable<DataRow> rows = context.SelectAllCollection(new FlightRecords());
             if (rows != null && rows.Count() > 0)
             {
@@ -68,7 +68,7 @@ namespace SOEN6441_Project
                 return 1;
         }
 
-        public void InsertComplexTables(FlightRecords tableType, DBContext context)
+        public void InsertComplexTables(FlightRecords tableType, DataMapper context)
         {
             if (tableType.flight != null)
             {

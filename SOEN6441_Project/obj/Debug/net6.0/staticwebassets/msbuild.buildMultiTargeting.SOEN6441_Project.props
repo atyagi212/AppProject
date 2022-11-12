@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/SOEN6441_Project.props" />
+</Project>

@@ -13,7 +13,7 @@ namespace SOEN6441_Project.Interfaces
 
         int GetLatestFlightId();
 
-        void InsertComplexTables(FlightRecords tableType, DBContext context);
+        void InsertComplexTables(FlightRecords tableType, DataMapper context);
 
         FlightRecords ParseFlightData(FlightRecords flightRecord);
     }

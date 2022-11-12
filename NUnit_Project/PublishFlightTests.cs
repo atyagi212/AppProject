@@ -51,7 +51,7 @@ public class PublishFlightTests
         //Arrange
 
         //Act
-        int Result = publishFlights.GetLatestFlightId();
+        int Result= publishFlights.GetLatestFlightId();
 
         //Assert
         Assert.AreNotEqual(Result, 0);
@@ -65,7 +65,7 @@ public class PublishFlightTests
         FlightRecords records = new FlightRecords();
 
         //Act
-        publishFlights.InsertComplexTables(records, _context);
+        publishFlights.InsertComplexTables(records,_context);
 
         //Assert
         Assert.IsTrue(true);

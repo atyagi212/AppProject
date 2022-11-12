@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fexd/p5Q8s8R0v4JcnceCKsKpFJy4fqrDySmHVreDClAqWrBBEPomrtNUldbE8KA2/V7vwC1OszwaMX98cFSHA==",
+  "dgSpecHash": "Oy07DKQ7j88/DwjMxW6mGDMyGlSxqap90GlNn4KClg+emQT0cOtDq9C4nnkSVi2XMnfLFRWRL5CLWNUj/NUTTw==",
   "success": true,
-  "projectFilePath": "/Users/akshattyagi/Documents/GitHub/AppProject/NUnit_Project/NUnit_Project.csproj",
+  "projectFilePath": "/Users/akshattyagi/Documents/GitHub/SOEN6441_Project/NUnit_Project/NUnit_Project.csproj",
   "expectedPackageFiles": [
     "/Users/akshattyagi/.nuget/packages/castle.core/5.1.0/castle.core.5.1.0.nupkg.sha512",
     "/Users/akshattyagi/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
@@ -22,7 +22,9 @@
     "/Users/akshattyagi/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "/Users/akshattyagi/.nuget/packages/system.net.http/2.0.20126.16343/system.net.http.2.0.20126.16343.nupkg.sha512",
     "/Users/akshattyagi/.nuget/packages/system.net.http.formatting.extension/5.2.3/system.net.http.formatting.extension.5.2.3.nupkg.sha512",
-    "/Users/akshattyagi/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512"
+    "/Users/akshattyagi/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512",
+    "/Users/akshattyagi/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.11/microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512",
+    "/Users/akshattyagi/.nuget/packages/microsoft.netcore.app.ref/6.0.11/microsoft.netcore.app.ref.6.0.11.nupkg.sha512"
   ],
   "logs": [
     {

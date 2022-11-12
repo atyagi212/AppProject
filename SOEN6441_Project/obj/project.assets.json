@@ -5,30 +5,46 @@
       "MySqlConnector/2.1.13": {
         "type": "package",
         "compile": {
-          "lib/net6.0/MySqlConnector.dll": {}
+          "lib/net6.0/MySqlConnector.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/MySqlConnector.dll": {}
+          "lib/net6.0/MySqlConnector.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Net.Http/2.0.20126.16343": {
         "type": "package",
         "compile": {
-          "lib/net40/System.Net.Http.WebRequest.dll": {},
-          "lib/net40/System.Net.Http.dll": {}
+          "lib/net40/System.Net.Http.WebRequest.dll": {
+            "related": ".xml"
+          },
+          "lib/net40/System.Net.Http.dll": {
+            "related": ".WebRequest.xml;.xml"
+          }
         },
         "runtime": {
-          "lib/net40/System.Net.Http.WebRequest.dll": {},
-          "lib/net40/System.Net.Http.dll": {}
+          "lib/net40/System.Net.Http.WebRequest.dll": {
+            "related": ".xml"
+          },
+          "lib/net40/System.Net.Http.dll": {
+            "related": ".WebRequest.xml;.xml"
+          }
         }
       },
       "System.Net.Http.Formatting.Extension/5.2.3": {
@@ -149,11 +165,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/akshattyagi/Documents/GitHub/AppProject/SOEN6441_Project/SOEN6441_Project.csproj",
+      "projectUniqueName": "/Users/akshattyagi/Documents/GitHub/SOEN6441_Project/SOEN6441_Project/SOEN6441_Project.csproj",
       "projectName": "SOEN6441_Project",
-      "projectPath": "/Users/akshattyagi/Documents/GitHub/AppProject/SOEN6441_Project/SOEN6441_Project.csproj",
+      "projectPath": "/Users/akshattyagi/Documents/GitHub/SOEN6441_Project/SOEN6441_Project/SOEN6441_Project.csproj",
       "packagesPath": "/Users/akshattyagi/.nuget/packages/",
-      "outputPath": "/Users/akshattyagi/Documents/GitHub/AppProject/SOEN6441_Project/obj/",
+      "outputPath": "/Users/akshattyagi/Documents/GitHub/SOEN6441_Project/SOEN6441_Project/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/akshattyagi/.nuget/NuGet/NuGet.Config"
@@ -204,6 +220,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.11, 6.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.osx-arm64",
+            "version": "[6.0.11, 6.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.11, 6.0.11]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -212,7 +242,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
       }
     }
   },

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/akshattyagi/Documents/GitHub/AppProject/SOEN6441_Project/SOEN6441_Project.csproj": {}
+    "/Users/akshattyagi/Documents/GitHub/SOEN6441_Project/SOEN6441_Project/SOEN6441_Project.csproj": {}
   },
   "projects": {
-    "/Users/akshattyagi/Documents/GitHub/AppProject/SOEN6441_Project/SOEN6441_Project.csproj": {
+    "/Users/akshattyagi/Documents/GitHub/SOEN6441_Project/SOEN6441_Project/SOEN6441_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/akshattyagi/Documents/GitHub/AppProject/SOEN6441_Project/SOEN6441_Project.csproj",
+        "projectUniqueName": "/Users/akshattyagi/Documents/GitHub/SOEN6441_Project/SOEN6441_Project/SOEN6441_Project.csproj",
         "projectName": "SOEN6441_Project",
-        "projectPath": "/Users/akshattyagi/Documents/GitHub/AppProject/SOEN6441_Project/SOEN6441_Project.csproj",
+        "projectPath": "/Users/akshattyagi/Documents/GitHub/SOEN6441_Project/SOEN6441_Project/SOEN6441_Project.csproj",
         "packagesPath": "/Users/akshattyagi/.nuget/packages/",
-        "outputPath": "/Users/akshattyagi/Documents/GitHub/AppProject/SOEN6441_Project/obj/",
+        "outputPath": "/Users/akshattyagi/Documents/GitHub/SOEN6441_Project/SOEN6441_Project/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/akshattyagi/.nuget/NuGet/NuGet.Config"
@@ -62,6 +62,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-arm64",
+              "version": "[6.0.11, 6.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.11, 6.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -70,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }
