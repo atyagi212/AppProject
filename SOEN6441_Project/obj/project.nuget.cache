@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bHNpinh4YSPp3Yd22KmDXHCDnyTTQLuSXNpvLjnunL9lMYqsL7GNnYJhOW8fG9uwrkHylvKa7FiaSJuY3cwYJQ==",
+  "dgSpecHash": "3thKzwVxGbY7IJhq6JIQe0haiQKOAaoJn/lN1PPK8VcnVXXqBPUWd8r2B45IhkzbTQWcvl5/fxwmhxn2zwTyuw==",
   "success": true,
-  "projectFilePath": "/Users/akshattyagi/Documents/GitHub/SOEN6441_Project/SOEN6441_Project/SOEN6441_Project.csproj",
+  "projectFilePath": "/Users/akshattyagi/Documents/GitHub/AppProject/SOEN6441_Project/SOEN6441_Project.csproj",
   "expectedPackageFiles": [
     "/Users/akshattyagi/.nuget/packages/mysqlconnector/2.1.13/mysqlconnector.2.1.13.nupkg.sha512",
     "/Users/akshattyagi/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",

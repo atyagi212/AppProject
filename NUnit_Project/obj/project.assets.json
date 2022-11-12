@@ -1562,11 +1562,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/akshattyagi/Documents/GitHub/SOEN6441_Project/NUnit_Project/NUnit_Project.csproj",
+      "projectUniqueName": "/Users/akshattyagi/Documents/GitHub/AppProject/NUnit_Project/NUnit_Project.csproj",
       "projectName": "NUnit_Project",
-      "projectPath": "/Users/akshattyagi/Documents/GitHub/SOEN6441_Project/NUnit_Project/NUnit_Project.csproj",
+      "projectPath": "/Users/akshattyagi/Documents/GitHub/AppProject/NUnit_Project/NUnit_Project.csproj",
       "packagesPath": "/Users/akshattyagi/.nuget/packages/",
-      "outputPath": "/Users/akshattyagi/Documents/GitHub/SOEN6441_Project/NUnit_Project/obj/",
+      "outputPath": "/Users/akshattyagi/Documents/GitHub/AppProject/NUnit_Project/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/akshattyagi/.nuget/NuGet/NuGet.Config"
@@ -1581,8 +1581,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/akshattyagi/Documents/GitHub/SOEN6441_Project/SOEN6441_Project/SOEN6441_Project.csproj": {
-              "projectPath": "/Users/akshattyagi/Documents/GitHub/SOEN6441_Project/SOEN6441_Project/SOEN6441_Project.csproj"
+            "/Users/akshattyagi/Documents/GitHub/AppProject/SOEN6441_Project/SOEN6441_Project.csproj": {
+              "projectPath": "/Users/akshattyagi/Documents/GitHub/AppProject/SOEN6441_Project/SOEN6441_Project.csproj"
             }
           }
         }

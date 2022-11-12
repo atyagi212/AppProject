@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NUnit_Project
-build_property.ProjectDir = /Users/akshattyagi/Documents/GitHub/SOEN6441_Project/NUnit_Project/
+build_property.ProjectDir = /Users/akshattyagi/Documents/GitHub/AppProject/NUnit_Project/

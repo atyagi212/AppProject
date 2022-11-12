@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Oy07DKQ7j88/DwjMxW6mGDMyGlSxqap90GlNn4KClg+emQT0cOtDq9C4nnkSVi2XMnfLFRWRL5CLWNUj/NUTTw==",
+  "dgSpecHash": "8qjORsmIcND+44L6W13uOnnekR3Ypja0vfhD1exJg8GCOolgIfYlnSViJbGHpzM1JRBjowlA30II+NRcd34SBA==",
   "success": true,
-  "projectFilePath": "/Users/akshattyagi/Documents/GitHub/SOEN6441_Project/NUnit_Project/NUnit_Project.csproj",
+  "projectFilePath": "/Users/akshattyagi/Documents/GitHub/AppProject/NUnit_Project/NUnit_Project.csproj",
   "expectedPackageFiles": [
     "/Users/akshattyagi/.nuget/packages/castle.core/5.1.0/castle.core.5.1.0.nupkg.sha512",
     "/Users/akshattyagi/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
