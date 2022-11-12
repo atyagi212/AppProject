@@ -241,7 +241,7 @@ namespace SOEN6441_Project
                     {
                         paramNames = paramNames + property.Name + ", ";
                         if (property.PropertyType == typeof(String))
-                            paramValues = paramValues + "'" + property.GetValue(type) + "', ";
+                            paramValues = paramValues + "'" + Utility.SanityLiterals(property.GetValue(type).ToString()) + "', ";
                         else if (property.PropertyType == typeof(DateTime))
                             paramValues = paramValues + "'" + Convert.ToDateTime(property.GetValue(type)).ToString("yyyy-MM-dd HH:mm:ss") + "', ";
                         else
@@ -269,7 +269,7 @@ namespace SOEN6441_Project
                     if (!Enum.IsDefined(typeof(Constants.SubTables), property.Name.ToUpper()) && property.Name!="Id")
                     {
                         if (property.PropertyType == typeof(String))
-                            updateParams = updateParams + property.Name + " = '" + property.GetValue(type) + "', ";
+                            updateParams = updateParams + property.Name + " = '" + Utility.SanityLiterals(property.GetValue(type).ToString()) + "', ";
                         else if (property.PropertyType == typeof(DateTime))
                             updateParams = updateParams + property.Name + " = '" + Convert.ToDateTime(property.GetValue(type)).ToString("yyyy-MM-dd HH:mm:ss") + "', ";
                         else

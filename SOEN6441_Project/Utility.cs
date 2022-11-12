@@ -46,6 +46,11 @@ namespace SOEN6441_Project
             }
             return obj;
         }
+
+        public static string SanityLiterals(string value)
+        {
+            return value.Replace("'", "''");
+        }
     }
 }
 

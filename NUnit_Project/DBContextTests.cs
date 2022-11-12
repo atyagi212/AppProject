@@ -17,7 +17,7 @@ public class DBContextTests
     {
         {"ConnectionStrings:myconn", conn}
     };
-    private DBContext _context;
+    private DataMapper _context;
 
     private IConfigurationRoot configuration;
 
@@ -27,7 +27,7 @@ public class DBContextTests
         configuration = new ConfigurationBuilder()
             .AddInMemoryCollection(myConfiguration)
             .Build();
-        _context = DBContext.getInstance(configuration);
+        _context = DataMapper.getInstance(configuration);
     }
 
     [Test, Order(1)]

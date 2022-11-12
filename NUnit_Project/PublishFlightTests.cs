@@ -15,7 +15,7 @@ public class PublishFlightTests
     {
         {"ConnectionStrings:myconn", conn}
     };
-    private DBContext _context;
+    private DataMapper _context;
 
     private IConfigurationRoot configuration;
     private Mock<IDatabaseSubscriber> mockObserver;
@@ -29,7 +29,7 @@ public class PublishFlightTests
             .Build();
         mockObserver = new Mock<IDatabaseSubscriber>();
         publishFlights = new PublishFlights(new NewFlightsManifest(configuration), configuration);
-        _context = DBContext.getInstance(configuration);
+        _context = DataMapper.getInstance(configuration);
     }
 
     [Test]
