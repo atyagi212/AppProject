@@ -26,7 +26,7 @@ namespace SOEN6441_Project
 
         public void CreateNewFlightData(ManifestResponseEntity response)
         {
-            if (response != null && response.data.Count > 0)
+            if (response != null && response.data!=null && response.data.Count > 0)
             {
                 ResetFlightsData();
                 Constants constants = new Constants();

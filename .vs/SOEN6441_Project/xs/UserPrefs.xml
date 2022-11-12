@@ -1,34 +1,48 @@
 ﻿<Properties StartupConfiguration="{9087FF1F-3450-40A6-A30B-1C917BA9B815}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="NUnit_Project/PublishFlightTests.cs">
+    <Files>
+      <File FileName="SOEN6441_Project/Constants.cs" Line="1" Column="1" />
+      <File FileName="SOEN6441_Project/DataMapper.cs" Line="93" Column="14" />
+      <File FileName="SOEN6441_Project/NewFlightsManifest.cs" Line="1" Column="1" />
+      <File FileName="SOEN6441_Project/PublishFlights.cs" Line="38" Column="33" />
+      <File FileName="SOEN6441_Project/Utility.cs" Line="50" Column="44" />
+      <File FileName="NUnit_Project/PublishFlightTests.cs" Line="32" Column="30" />
+      <File FileName="NUnit_Project/DBContextTests.cs" Line="30" Column="30" />
+      <File FileName="NUnit_Project/NewFlightManifestTests.cs" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SOEN6441_Project" expanded="True">
-            <Node name="SOEN6441_Project" expanded="True">
-              <Node name="Interfaces" expanded="True" />
-              <Node name="Pages" expanded="True" />
-              <Node name="wwwroot" expanded="True">
-                <Node name="js" expanded="True" />
+            <Node name="NUnit_Project" expanded="True">
+              <Node name="PublishFlightTests.cs" selected="True" />
+            </Node>
+            <Node name="SOEN6441_Project" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="SOEN6441_Project" expanded="True">
+            <Node name="NUnit_Project" expanded="True">
+              <Node name="NUnit_Project" expanded="True">
+                <Node name="DBContextTests" expanded="True" />
+                <Node name="NewFlightManifestTests" expanded="True">
+                  <Node name="Test_GetNewFlightsManifest_Result_OK" selected="True" />
+                </Node>
+                <Node name="PublishFlightTests" expanded="True" />
               </Node>
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="SOEN6441_Project" expanded="True" selected="True" />
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.SOEN6441__Project PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>
